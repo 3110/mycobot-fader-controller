@@ -1,7 +1,7 @@
 # myCobot用フェーダーコントローラ
 
 <div align="center">
-    <img src="images/mycobot-fader-controller.jpg" width="640">
+    <img src="images/mycobot-fader-controller.png" width="640">
     <p>myCobot用フェーダーコントローラ</p>
 </div>
 
