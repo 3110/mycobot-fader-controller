@@ -1,7 +1,7 @@
 # myCobot用フェーダーコントローラ
 
 <div align="center">
-    <img src="images/mycobot-fader-controller.jpg" width="640">
+    <img src="images/mycobot-fader-controller.png" width="640">
     <p>myCobot用フェーダーコントローラ</p>
 </div>
 
@@ -146,3 +146,16 @@ Pb.Hub UnitにはCH0からCH5まで6つの接続チャネルがあるので，�
 物にぶつかるかどうかなどには関係なく，myCobotはフェーダーで指定された位置に動きます。設定した値によってはmyCobotに無理な力がかかって壊れる可能性もありますので，動かす場合は細心の注意をはらってください。
 
 フェーダーに合わせて動かないようにするには，再度ボタンB（Stop）を押します。
+
+## その他
+
+* このプログラムにはElephant Robotics社が[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)のライセンスで配布している成果物を含んでいます。
+  * https://github.com/elephantrobotics/myCobot/tree/main/Arduino/MycobotBasic
+  * 以下を改変しています
+    * フォーマッタの適用
+    * AtomMain 3.2以降への対応のため係数の変更
+      * `MycobotBasic::readData()`
+      * ` MycobotBasic::WriteAngles(Angles angles, int speed)`
+    * コンパイラの警告抑制のため使われていない変数の削除
+    * typoの修正
+      * `MycobotBasic/MycobotBasic.h`: `WRITE_SIGLE_SERVO_GAP` -> `WRITE_SINGLE_SERVO_GAP`
